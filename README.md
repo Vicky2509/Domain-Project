@@ -8,7 +8,7 @@ order tracking, vendor details, and other pertinent details.
 It is designed to cater to the diverse needs of both customers and vendors.
 
 
-Technologies Utilized
+Technologies Utilized:
 
 Spring Boot: Developed a structured architecture using Java, incorporating a Controller layer for REST endpoints, a Service layer for business logic, and utilized Spring Data JPA for efficient data access.
 React: Implemented a dynamic and user-friendly interface in the frontend.
