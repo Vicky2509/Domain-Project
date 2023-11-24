@@ -33,7 +33,7 @@ const Signin = () => {
       if (role == "CUSTOMER") {
         axios.post(`http://localhost:8080/customer/login`, data).then((response) => {
           const result = response.data
-          console.log(result);
+          // console.log(result);
           if (result) {
             alert('successfully Logged in')
             sessionStorage.setItem('customer', JSON.stringify(result))

@@ -78,24 +78,6 @@ public class Requests {
 	@JsonIgnoreProperties("request")
 	private PaymentDetails payment;
 
-	/*
-	 * public Requests(String pickUp, String destination, Date requestDate,
-	 * TruckType truckType, RequestStatus requestStatus, String goodsType, Customer
-	 * customer, Vendor vendor, VehicleDetails vDetails, Ratings ratings,
-	 * PaymentDetails payment) { super(); this.pickUp = pickUp; this.destination =
-	 * destination; this.requestDate = requestDate; this.truckType = truckType;
-	 * this.requestStatus = requestStatus; this.goodsType = goodsType; this.customer
-	 * = customer; this.vendor = vendor; this.vDetails = vDetails; this.ratings =
-	 * ratings; this.payment = payment; }
-	 */
-	/*
-	 * public Requests(String pickUp, String destination, Date requestDate,
-	 * TruckType truckType, RequestStatus requestStatus, String goodsType, Customer
-	 * customer, Vendor vendor) { super(); this.pickUp = pickUp; this.destination =
-	 * destination; this.requestDate = requestDate; this.truckType = truckType;
-	 * this.requestStatus = requestStatus; this.goodsType = goodsType; this.customer
-	 * = customer; this.vendor = vendor; }
-	 */
 	public Requests(String pickUp, String destination, TruckType truckType,
 			RequestStatus requestStatus, String goodsType) {
 		super();

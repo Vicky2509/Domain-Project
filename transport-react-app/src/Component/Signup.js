@@ -3,6 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import "../index.css";
 import { validEmail, validPassword, validPhoneNo } from "../common/Regex";
+
 const Signup = () => {
   const history = useHistory();
   const [InvalidErr, setInvalidErr] = useState(false);
@@ -40,7 +41,6 @@ const Signup = () => {
   };
   const signup = () => {
     setFnameErr(false);
-
     setEmailErr(false);
     setPhoneNoErr(false);
     setPwdErr(false);
@@ -105,6 +105,7 @@ const Signup = () => {
           .post(`http://localhost:8080/customer`, body)
           .then((response) => {
             const result = response.data;
+            // console.log(result);
             if (result) {
               alert("succcess");
               history.push("/Signin");
@@ -140,7 +141,7 @@ const Signup = () => {
   return (
     <div className="container">
       <div>
-        <div className="mb-3" className="sign">
+        <div className="mb-3 sign"> {/*//sign changed by me*/}
           <h1>SignUp</h1>
           <br></br>
           <div className="mb-3">
